@@ -13,13 +13,14 @@
     @content;
   }
 }
-@mixin mob-tab {
+
+@mixin mobile-only {
   @media screen and (max-width: 767px) {
     @content;
   }
 }
-@mixin tab-desk {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+@mixin mobile-tablet-only {
+  @media screen and (max-width: 1199) {
     @content;
   }
 }
