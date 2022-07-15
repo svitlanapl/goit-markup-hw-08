@@ -8,13 +8,36 @@
   border-right: 1px solid #eeeeee;
 }
 .portfolio {
-  padding-bottom: 94px;
-  padding-top: 94px;
   text-align: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @include desktop {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .filter {
-  display: inline-flex;
-  margin: 0 auto 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * 15px);
+
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+.filter__item {
+  margin-top: 15px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 .filter__btn {
   display: inline-block;
@@ -42,9 +65,7 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-.filter__item + .filter__item {
-  margin-left: 8px;
-}
+
 .portfolio__title {
   margin-bottom: 4px;
   text-align: left;
@@ -66,7 +87,7 @@
   margin: -15px;
 }
 .portfolio__item {
-  // width: calc (100% / 3-30px);
+  width: calc (100% / 3-30px);
   margin: 15px;
   a {
     text-decoration: none;
