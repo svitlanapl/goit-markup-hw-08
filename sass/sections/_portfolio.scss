@@ -84,15 +84,19 @@
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  gap: 30px;
 }
 .portfolio__item {
-  width: calc (100% / 3-30px);
-  margin: 15px;
-  a {
-    text-decoration: none;
-    display: block;
-  }
+}
+@include tablet {
+  width: calc((100% - 30px) / 2);
+}
+@include desktop {
+  width: calc((100% - 60px) / 3);
+}
+a {
+  text-decoration: none;
+  display: block;
 }
 .portfolio__top-wrap {
   position: relative;
