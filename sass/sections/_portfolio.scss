@@ -87,12 +87,12 @@
   gap: 30px;
 }
 .portfolio__item {
-}
-@include tablet {
-  width: calc((100% - 30px) / 2);
-}
-@include desktop {
-  width: calc((100% - 60px) / 3);
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 a {
   text-decoration: none;

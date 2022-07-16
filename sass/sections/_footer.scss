@@ -25,9 +25,9 @@
     margin-bottom: 0;
   }
 }
+
 .footer__logo {
   margin-bottom: 20px;
-  // display: inline-block;
 
   font-family: "Raleway";
   font-weight: 700;
@@ -47,9 +47,6 @@
     justify-content: center;
     align-items: baseline;
   }
-  // @include desktop {
-  //   margin-bottom: 60px;
-  // }
 }
 .address {
   font-style: inherit;
